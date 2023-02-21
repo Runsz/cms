@@ -1,0 +1,234 @@
+/* 
+Theme Name:   COVID19_Indonesia V3
+Theme URI:    =
+Description:  Theme child 3
+Author:       Karunia Raharjo
+Author URI:   =
+Template:     blankslate
+version:3.0
+*/
+
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efefef;
+}
+
+
+/* Clear */
+#clear{
+    width: 100%;
+}
+#header #clear{
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    padding: 5px 0px;
+}
+#clear #judul{
+    margin-left: 4%;
+}
+
+/* Header */
+#header{
+    width: 100%;
+}
+#header a{
+    text-decoration: none;
+    color: #000;
+}
+#header #judul-menu{
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    padding: 5px 0px;
+    position: fixed;
+    z-index: 1;
+}
+#judul{
+    margin-left: 4%;
+}
+
+/* Menu */
+#header #menu{
+    width: 70%;
+    height: fit-content;
+    text-align: right;
+    margin: auto;
+}
+#header #menu ul{
+    display: flex;
+    width: fit-content;
+    margin: 0px;
+    float: right;
+}
+#header #menu li{
+    list-style-type: none;
+    margin-right: 15px;
+}
+#header #menu ul li :hover{
+    color: #2900e0;
+    background-color: #eaeaea;
+    padding: 5px;
+}
+/* Dropdown */
+#header #menu li .sub-menu{
+    display: none;
+    position: fixed;
+    text-align: left;
+    padding: 0px;
+    background-color: #fff;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+#header #menu li .sub-menu li a{
+    padding: 10px auto;
+}
+#header #menu ul #menu-item-32{
+    display: block;
+}
+#header #menu ul #menu-item-32:hover .sub-menu {
+    display: block;
+    padding-bottom: 20px;
+}
+
+/* Description */
+#header #description{
+    background-color:#100056 ;
+    text-align: center;
+    padding: 15px;
+}
+#header #description h3{
+    color: #fff;
+    margin: 0px;
+}
+
+
+
+/* Gallery */
+#gallery{
+    background-color: #fff;
+    padding: 3% 1%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#gallery figure{
+    margin: 0px;
+}
+
+/* Content */
+#content{
+    padding: 4%;
+}
+#content a{
+    text-decoration: none;
+}
+#content #post{
+    display: flex;
+    margin: 4% auto;
+    width: 80%;
+    background-color: #fff;
+}
+#content #post #isi{
+    margin-left: 3%;
+}
+#content h3{
+    text-align: center;
+}
+#content #post #isi h3{
+    text-align: left;
+    margin-left: 50px;
+}
+#content #post #isi h3 a{
+    color: #000;
+}
+
+
+
+/* Custom Content */
+#wrapper{
+    display: flex;
+    width: 100%;
+}
+#custom-content{
+    width: 70%;
+}
+#custom-content h2{
+    text-align: center;
+    margin-top: 0px;
+}
+#custom-content a{
+    text-decoration: none;
+}
+#custom-content #post{
+    display: flex;
+    margin: 4% auto;
+    width: 90%;
+    background-color: #fff;
+}
+#custom-content #post #isi{
+    margin-left: 3%;
+}
+#custom-content #post #isi h3{
+    text-align: left;
+    margin-left: 50px;
+}
+#custom-content #post #isi h3 a{
+    color: #000;
+}
+
+
+/* Sidebar */
+#sidebar {
+    width: 25%;
+}
+#sidebar li{
+    list-style-type: none
+}
+#sidebar #block-8 li{
+    margin: 5px ;
+    list-style-type: disc;
+}
+#sidebar a{
+    text-decoration: none;
+    color: #100056;
+}
+
+
+/* Page Kategori */
+#content #category{
+    width: 70%;
+    margin: 0px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+#content #category h2{
+    margin-top: 0px;
+    text-align: center;
+}
+#content #category .categories {
+    list-style-type: none;
+    font-size: 15pt;
+    font-weight: 600;
+    margin-left: 50px;
+}
+#content #category .categories ul {
+    list-style-type: none;
+    padding: 0px;
+}
+#content #category .categories ul a{
+    font-size: 13pt;
+    font-weight: 300;
+    color: #100056;
+}
+
+
+
+/* Footer */
+#footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: #424242;
+}
