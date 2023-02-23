@@ -89,12 +89,15 @@
         //remove_meta_box('dashboard_incoming_links', 'dashboard', 'normal');  //Incoming Links
         //remove_meta_box('dashboard_plugins', 'dashboard', 'normal');   //Plugins
         //remove_meta_box('dashboard_quick_press', 'dashboard', 'side');  //Quick Press /
-        remove_meta_box('dashboard_recent_drafts', 'dashboard', 'side');  //Recent Drafts
-        remove_meta_box('dashboard_primary', 'dashboard', 'side');   //WordPress blog /
         //remove_meta_box('dashboard_secondary', 'dashboard', 'side');   //Other WordPress News
-        remove_meta_box('dashboard_site_health', 'dashboard', 'normal'); //Site Health /
         //remove_meta_box('dashboard_activity', 'dashboard', 'normal'); //Activity /
         //use 'dashboard-network' as the second parameter to remove widgets from a network dashboard.
+
+        remove_meta_box('dashboard_recent_drafts', 'dashboard', 'side');  //Recent Drafts
+        remove_meta_box('dashboard_primary', 'dashboard', 'side');   //WordPress blog 
+        remove_meta_box('dashboard_site_health', 'dashboard', 'normal'); //Site Health 
+        remove_meta_box('rank_math_dashboard_widget', 'dashboard', 'normal');   //Plugins SEO Rank Math
+        remove_meta_box('wpforms_reports_widget_lite', 'dashboard', 'normal');   //Plugins WP Form
     }
 
     add_action('wp_dashboard_setup', 'wpdocs_remove_dashboard_widgets');

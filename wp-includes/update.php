@@ -317,7 +317,7 @@ function wp_update_plugins( $extra_stats = array() ) {
 
 	// If running blog-side, bail unless we've not checked in the last 12 hours.
 	if ( ! function_exists( 'get_plugins' ) ) {
-		require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		require_once ABSPATH . 'admin/includes/plugin.php';
 	}
 
 	$plugins      = get_plugins();
@@ -843,8 +843,8 @@ function wp_update_themes( $extra_stats = array() ) {
  * @since 3.7.0
  */
 function wp_maybe_auto_update() {
-	include_once ABSPATH . 'wp-admin/includes/admin.php';
-	require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
+	include_once ABSPATH . 'admin/includes/admin.php';
+	require_once ABSPATH . 'admin/includes/class-wp-upgrader.php';
 
 	$upgrader = new WP_Automatic_Updater;
 	$upgrader->run();
@@ -1002,7 +1002,7 @@ function _maybe_update_core() {
  * Checks the last time plugins were run before checking plugin versions.
  *
  * This might have been backported to WordPress 2.6.1 for performance reasons.
- * This is used for the wp-admin to check only so often instead of every page
+ * This is used for the admin to check only so often instead of every page
  * load.
  *
  * @since 2.7.0

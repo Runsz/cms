@@ -222,7 +222,7 @@ class WP_REST_Autosaves_Controller extends WP_REST_Revisions_Controller {
 
 		// We need to check post lock to ensure the original author didn't leave their browser tab open.
 		if ( ! function_exists( 'wp_check_post_lock' ) ) {
-			require_once ABSPATH . 'wp-admin/includes/post.php';
+			require_once ABSPATH . 'admin/includes/post.php';
 		}
 
 		$post_lock = wp_check_post_lock( $post->ID );
@@ -344,7 +344,7 @@ class WP_REST_Autosaves_Controller extends WP_REST_Revisions_Controller {
 	/**
 	 * Creates autosave for the specified post.
 	 *
-	 * From wp-admin/post.php.
+	 * From admin/post.php.
 	 *
 	 * @since 5.0.0
 	 *
@@ -389,7 +389,7 @@ class WP_REST_Autosaves_Controller extends WP_REST_Revisions_Controller {
 				);
 			}
 
-			/** This filter is documented in wp-admin/post.php */
+			/** This filter is documented in admin/post.php */
 			do_action( 'wp_creating_autosave', $new_autosave );
 
 			// wp_update_post() expects escaped array.

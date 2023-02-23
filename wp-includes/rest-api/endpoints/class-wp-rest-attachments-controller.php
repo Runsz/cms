@@ -208,8 +208,8 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 		}
 
 		// Include media and image functions to get access to wp_generate_attachment_metadata().
-		require_once ABSPATH . 'wp-admin/includes/media.php';
-		require_once ABSPATH . 'wp-admin/includes/image.php';
+		require_once ABSPATH . 'admin/includes/media.php';
+		require_once ABSPATH . 'admin/includes/image.php';
 
 		// Post-process the upload (create image sub-sizes, make PDF thumbnails, etc.) and insert attachment meta.
 		// At this point the server may run out of resources and post-processing of uploaded images may fail.
@@ -255,7 +255,7 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 		$file = $file['file'];
 
 		// Include image functions to get access to wp_read_image_metadata().
-		require_once ABSPATH . 'wp-admin/includes/image.php';
+		require_once ABSPATH . 'admin/includes/image.php';
 
 		// Use image exif/iptc data for title and caption defaults if possible.
 		$image_meta = wp_read_image_metadata( $file );
@@ -375,7 +375,7 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 	public function post_process_item( $request ) {
 		switch ( $request['action'] ) {
 			case 'create-image-subsizes':
-				require_once ABSPATH . 'wp-admin/includes/image.php';
+				require_once ABSPATH . 'admin/includes/image.php';
 				wp_update_image_subsizes( $request['id'] );
 				break;
 		}
@@ -426,7 +426,7 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 	 * @return WP_REST_Response|WP_Error Response object on success, WP_Error object on failure.
 	 */
 	public function edit_media_item( $request ) {
-		require_once ABSPATH . 'wp-admin/includes/image.php';
+		require_once ABSPATH . 'admin/includes/image.php';
 
 		$attachment_id = $request['id'];
 
@@ -810,7 +810,7 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 		}
 
 		if ( in_array( 'missing_image_sizes', $fields, true ) ) {
-			require_once ABSPATH . 'wp-admin/includes/image.php';
+			require_once ABSPATH . 'admin/includes/image.php';
 			$data['missing_image_sizes'] = array_keys( wp_get_missing_image_subsizes( $post->ID ) );
 		}
 
@@ -1025,7 +1025,7 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 		$type = array_shift( $headers['content_type'] );
 
 		// Include filesystem functions to get access to wp_tempnam() and wp_handle_sideload().
-		require_once ABSPATH . 'wp-admin/includes/file.php';
+		require_once ABSPATH . 'admin/includes/file.php';
 
 		// Save the file.
 		$tmpfname = wp_tempnam( $filename );
@@ -1223,7 +1223,7 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 		}
 
 		// Include filesystem functions to get access to wp_handle_upload().
-		require_once ABSPATH . 'wp-admin/includes/file.php';
+		require_once ABSPATH . 'admin/includes/file.php';
 
 		$file = wp_handle_upload( $files['file'], $overrides );
 
@@ -1305,7 +1305,7 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 		}
 
 		// Include multisite admin functions to get access to upload_is_user_over_quota().
-		require_once ABSPATH . 'wp-admin/includes/ms.php';
+		require_once ABSPATH . 'admin/includes/ms.php';
 
 		if ( upload_is_user_over_quota( false ) ) {
 			return new WP_Error(

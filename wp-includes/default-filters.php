@@ -8,7 +8,7 @@
  *
  * Not all of the default hooks are found in this file.
  * For instance, administration-related hooks are located in
- * wp-admin/includes/admin-filters.php.
+ * admin/includes/admin-filters.php.
  *
  * If a hook should only be called from a specific context
  * (admin area, multisite environment…), please move it

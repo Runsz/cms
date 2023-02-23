@@ -2620,7 +2620,7 @@ const initializeMetaBoxes = () => _ref16 => {
     // Meta boxes are initialized once at page load. It is not necessary to
     // account for updates on each state change.
     //
-    // See: https://github.com/WordPress/WordPress/blob/5.1.1/wp-admin/includes/post.php#L2307-L2309.
+    // See: https://github.com/WordPress/WordPress/blob/5.1.1/admin/includes/post.php#L2307-L2309.
 
     const shouldTriggerMetaboxesSave = hasMetaBoxes && wasSavingPost && !isSavingPost && !wasAutosavingPost; // Save current state for next inspection.
 
@@ -3414,14 +3414,14 @@ const constants_STORE_NAME = 'core/edit-post';
  * @type {string}
  */
 
-const VIEW_AS_LINK_SELECTOR = '#wp-admin-bar-view a';
+const VIEW_AS_LINK_SELECTOR = '#admin-bar-view a';
 /**
  * CSS selector string for the admin bar preview post link anchor tag.
  *
  * @type {string}
  */
 
-const VIEW_AS_PREVIEW_LINK_SELECTOR = '#wp-admin-bar-preview a';
+const VIEW_AS_PREVIEW_LINK_SELECTOR = '#admin-bar-preview a';
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-post/build-module/store/index.js
 /**

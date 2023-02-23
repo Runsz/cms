@@ -781,7 +781,7 @@ function wp_not_installed() {
 	require ABSPATH . WPINC . '/kses.php';
 	require ABSPATH . WPINC . '/pluggable.php';
 
-	$link = wp_guess_url() . '/wp-admin/install.php';
+	$link = wp_guess_url() . '/admin/install.php';
 
 	wp_redirect( $link );
 	die();
@@ -1182,7 +1182,7 @@ function is_admin() {
 /**
  * Determines whether the current request is for a site's administrative interface.
  *
- * e.g. `/wp-admin/`
+ * e.g. `/admin/`
  *
  * Does not check if the user is an administrator; use current_user_can()
  * for checking roles and capabilities.
@@ -1206,7 +1206,7 @@ function is_blog_admin() {
 /**
  * Determines whether the current request is for the network administrative interface.
  *
- * e.g. `/wp-admin/network/`
+ * e.g. `/admin/network/`
  *
  * Does not check if the user is an administrator; use current_user_can()
  * for checking roles and capabilities.
@@ -1233,7 +1233,7 @@ function is_network_admin() {
 /**
  * Determines whether the current request is for a user admin screen.
  *
- * e.g. `/wp-admin/user/`
+ * e.g. `/admin/user/`
  *
  * Does not check if the user is an administrator; use current_user_can()
  * for checking roles and capabilities.

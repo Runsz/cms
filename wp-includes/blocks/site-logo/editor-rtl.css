@@ -69,7 +69,7 @@
  */
 /**
  * Reset default styles for JavaScript UI based pages.
- * This is a WP-admin agnostic reset
+ * This is a admin agnostic reset
  */
 /**
  * Reset the WP Admin page styles for Gutenberg-like pages.
@@ -132,8 +132,8 @@
   height: 48px;
   border-radius: 50%;
   position: relative;
-  background: var(--wp-admin-theme-color);
-  border-color: var(--wp-admin-theme-color);
+  background: var(--admin-theme-color);
+  border-color: var(--admin-theme-color);
   border-style: solid;
   color: #fff;
 }

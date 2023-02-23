@@ -20619,8 +20619,8 @@ const ALERT = {
 }; // Matches @wordpress/base-styles
 
 const ADMIN = {
-  theme: 'var( --wp-admin-theme-color, #007cba)',
-  themeDark10: 'var( --wp-admin-theme-color-darker-10, #006ba1)'
+  theme: 'var( --admin-theme-color, #007cba)',
+  themeDark10: 'var( --admin-theme-color-darker-10, #006ba1)'
 };
 const UI = {
   theme: ADMIN.theme,
@@ -27779,7 +27779,7 @@ function AnglePickerControl(_ref) {
       marginBottom: 0,
       marginRight: space(3),
       style: {
-        color: 'var( --wp-admin-theme-color )'
+        color: 'var( --admin-theme-color )'
       }
     }, "\xB0")
   })), (0,external_wp_element_namespaceObject.createElement)(flex_item_component, {
@@ -30085,7 +30085,7 @@ const MarkLabel = emotion_styled_base_browser_esm("span",  true ? {
 
 var _ref3 =  true ? {
   name: "1sb75b3",
-  styles: "background-color:var( --wp-admin-theme-color )"
+  styles: "background-color:var( --admin-theme-color )"
 } : 0;
 
 const thumbColor = _ref10 => {
@@ -30109,7 +30109,7 @@ const thumbFocus = _ref11 => {
   let {
     isFocused
   } = _ref11;
-  return isFocused ? /*#__PURE__*/emotion_react_browser_esm_css("&::before{content:' ';position:absolute;background-color:var( --wp-admin-theme-color );opacity:0.4;border-radius:50%;height:", thumbSize + 8, "px;width:", thumbSize + 8, "px;top:-4px;left:-4px;}" + ( true ? "" : 0),  true ? "" : 0) : '';
+  return isFocused ? /*#__PURE__*/emotion_react_browser_esm_css("&::before{content:' ';position:absolute;background-color:var( --admin-theme-color );opacity:0.4;border-radius:50%;height:", thumbSize + 8, "px;width:", thumbSize + 8, "px;top:-4px;left:-4px;}" + ( true ? "" : 0),  true ? "" : 0) : '';
 };
 
 const Thumb = emotion_styled_base_browser_esm("span",  true ? {
@@ -61266,7 +61266,7 @@ const spinAnimation = emotion_react_browser_esm_keyframes`
  `;
 const StyledSpinner = emotion_styled_base_browser_esm("svg",  true ? {
   target: "ea4tfvq2"
-} : 0)("width:", config_values.spinnerSize, "px;height:", config_values.spinnerSize, "px;display:inline-block;margin:5px 11px 0;position:relative;color:var( --wp-admin-theme-color );overflow:visible;" + ( true ? "" : 0));
+} : 0)("width:", config_values.spinnerSize, "px;height:", config_values.spinnerSize, "px;display:inline-block;margin:5px 11px 0;position:relative;color:var( --admin-theme-color );overflow:visible;" + ( true ? "" : 0));
 const commonPathProps =  true ? {
   name: "9s4963",
   styles: "fill:transparent;stroke-width:1.5px"
@@ -61615,7 +61615,7 @@ const TextControl = (0,external_wp_element_namespaceObject.forwardRef)(Unforward
 
 
 const inputStyleNeutral = /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:0 0 0 transparent;transition:box-shadow 0.1s linear;border-radius:", config_values.radiusBlockUi, ";border:", config_values.borderWidth, " solid ", COLORS.ui.border, ";" + ( true ? "" : 0),  true ? "" : 0);
-const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color:var( --wp-admin-theme-color );box-shadow:0 0 0 calc( ", config_values.borderWidthFocus, " - ", config_values.borderWidth, " ) var( --wp-admin-theme-color );outline:2px solid transparent;" + ( true ? "" : 0),  true ? "" : 0);
+const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color:var( --admin-theme-color );box-shadow:0 0 0 calc( ", config_values.borderWidthFocus, " - ", config_values.borderWidth, " ) var( --admin-theme-color );outline:2px solid transparent;" + ( true ? "" : 0),  true ? "" : 0);
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/breakpoint-values.js
 /* harmony default export */ var breakpoint_values = ({

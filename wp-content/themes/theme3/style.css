@@ -12,6 +12,7 @@ body{
     margin:0px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #efefef;
+    width: 100%;
 }
 
 
@@ -127,6 +128,7 @@ body{
 #content #post{
     display: flex;
     margin: 4% auto;
+    padding: 10px;
     width: 80%;
     background-color: #fff;
 }
@@ -164,6 +166,7 @@ body{
 #custom-content #post{
     display: flex;
     margin: 4% auto;
+    padding: 10px;
     width: 90%;
     background-color: #fff;
 }
@@ -182,6 +185,9 @@ body{
 /* Sidebar */
 #sidebar {
     width: 25%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 20px;
 }
 #sidebar li{
     list-style-type: none
@@ -232,3 +238,157 @@ body{
     text-align: center;
     color: #424242;
 }
+
+
+
+/* Responsive */
+   
+    /* Tablet */
+    @media only screen and (max-width: 768px) {
+        /* Header */
+        #header #menu ul{
+            margin-right: 10px;
+        }
+
+        /* Custom Content */
+        #wrapper{
+            display: block;
+            width: 100%;
+        }
+        #custom-content{
+            margin: 10px auto;
+            width: 80%;
+        }
+
+        /* Sidebar */
+        #sidebar {
+            width: 70%;
+            margin: 20px auto;
+        }
+        #sidebar #recent-post{
+            width: 70%;
+            margin: 0px auto;
+        }
+    }
+
+
+     /* Mobile */
+     @media only screen and (max-width: 600px) {
+        #wpadminbar {
+            position: fixed;
+        }
+
+        /* Header */
+        #header #judul-menu h1 {
+            font-size: large;
+        }
+        #header #clear h1 {
+            font-size: large;
+        }
+
+        /* Menu */
+        #header #menu ul{
+            padding-left: 0px;
+        }
+        #header #menu ul a{
+            font-size: small;
+        }
+
+        /* Description */
+        #header #description{
+            padding: 10px;
+        }
+        #header #description h3{
+            font-size: smaller;
+        }
+
+        /* Content */
+        #content #post{
+            display: block;
+            margin: 4% auto;
+            width: 90%;
+            background-color: #fff;
+        }
+        #content #post img{
+            margin-left: 15%;
+        }
+        #content #isi{
+            width: 80%;
+            margin: 0px auto;
+        }
+        #content #post #isi h3{
+            margin-left: 30%;
+        }
+        body h3{
+            font-size: medium;
+        }
+        body h2{
+            font-size: larger;
+        }
+        body h4{
+            font-size: small;
+        }
+        body p{
+            font-size: small;
+        }
+
+        /* Custom Content */
+        #custom-content{
+            margin: 10px auto;
+            width: 95%;
+        }
+        #custom-content #post{
+            display: block;
+            margin: 4% auto;
+            width: 90%;
+            background-color: #fff;
+        }
+        #custom-content #post img{
+            margin-left: 15%;
+        }
+        #custom-content #isi{
+            width: 80%;
+            margin: 0px auto;
+        }
+        #custom-content #post #isi h3{
+            margin-left: 30%;
+        }
+
+        /* Sidebar */
+        #sidebar {
+            width: 80%;
+            margin: 20px auto;
+        }
+        #sidebar h2{
+            font-size: medium;
+            margin-bottom: 10px;
+        }
+        #sidebar h4{
+            margin: 5px 0px;
+        }
+    }
+
+
+    @media only screen and (max-width: 375px) {
+        #header #judul-menu{
+            width: 100%;
+        }
+        #header #judul {
+            width: 40%;
+        }
+        #header #menu{
+            width: 45%;
+            margin: auto 5px;
+        }
+        #header #menu ul{
+            margin-right: 0px;
+        }
+        #content #post img{
+            width: 100px;
+            height: 100px;
+        }
+        #custom-content #post img{
+            width: 100px;
+            height: 100px;
+        }
+    }

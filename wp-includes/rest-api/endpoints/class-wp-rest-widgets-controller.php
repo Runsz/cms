@@ -409,7 +409,7 @@ class WP_REST_Widgets_Controller extends WP_REST_Controller {
 			);
 			$_REQUEST = $_POST;
 
-			/** This action is documented in wp-admin/widgets-form.php */
+			/** This action is documented in admin/widgets-form.php */
 			do_action( 'delete_widget', $widget_id, $sidebar_id, $id_base );
 
 			$callback = $wp_registered_widget_updates[ $id_base ]['callback'];
@@ -521,7 +521,7 @@ class WP_REST_Widgets_Controller extends WP_REST_Controller {
 	protected function save_widget( $request, $sidebar_id ) {
 		global $wp_widget_factory, $wp_registered_widget_updates;
 
-		require_once ABSPATH . 'wp-admin/includes/widgets.php'; // For next_widget_id_number().
+		require_once ABSPATH . 'admin/includes/widgets.php'; // For next_widget_id_number().
 
 		if ( isset( $request['id'] ) ) {
 			// Saving an existing widget.

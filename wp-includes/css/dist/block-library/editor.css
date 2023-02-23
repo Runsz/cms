@@ -69,7 +69,7 @@
  */
 /**
  * Reset default styles for JavaScript UI based pages.
- * This is a WP-admin agnostic reset
+ * This is a admin agnostic reset
  */
 /**
  * Reset the WP Admin page styles for Gutenberg-like pages.
@@ -129,7 +129,7 @@ ul.wp-block-archives {
   cursor: text;
 }
 .wp-block-button:focus {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--wp-admin-theme-color);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--admin-theme-color);
   outline: 2px solid transparent;
   outline-offset: -2px;
 }
@@ -625,7 +625,7 @@ html :where(.wp-block-column) {
   outline: none;
 }
 .wp-block-freeform.block-library-rich-text__tinymce a {
-  color: var(--wp-admin-theme-color);
+  color: var(--admin-theme-color);
 }
 .wp-block-freeform.block-library-rich-text__tinymce:focus a[data-mce-selected] {
   padding: 0 2px;
@@ -992,7 +992,7 @@ figure.wp-block-gallery .components-spinner {
   outline: none;
 }
 .blocks-gallery-item figure.is-selected::before {
-  box-shadow: 0 0 0 1px #fff inset, 0 0 0 3px var(--wp-admin-theme-color) inset;
+  box-shadow: 0 0 0 1px #fff inset, 0 0 0 3px var(--admin-theme-color) inset;
   content: "";
   outline: 2px solid transparent;
   position: absolute;
@@ -1144,8 +1144,8 @@ figure.wp-block-gallery .components-spinner {
   }
 }
 .block-library-html__edit .block-editor-plain-text:focus {
-  border-color: var(--wp-admin-theme-color) !important;
-  box-shadow: 0 0 0 1px var(--wp-admin-theme-color) !important;
+  border-color: var(--admin-theme-color) !important;
+  box-shadow: 0 0 0 1px var(--admin-theme-color) !important;
   outline: 2px solid transparent !important;
 }
 
@@ -1922,7 +1922,7 @@ body.editor-styles-wrapper .wp-block-navigation__responsive-container.is-menu-op
   background-image: none !important;
 }
 .wp-block-navigation-link__placeholder .wp-block-navigation-link__placeholder-text span {
-  --wp-underline-color: var(--wp-admin-theme-color);
+  --wp-underline-color: var(--admin-theme-color);
   background-image: linear-gradient(45deg, transparent 20%, var(--wp-underline-color) 30%, var(--wp-underline-color) 36%, transparent 46%), linear-gradient(135deg, transparent 54%, var(--wp-underline-color) 64%, var(--wp-underline-color) 70%, transparent 80%);
   background-position: 0 100%;
   background-size: 6px 3px;
@@ -2184,8 +2184,8 @@ body.editor-styles-wrapper .wp-block-navigation__responsive-container.is-menu-op
   }
 }
 .blocks-shortcode__textarea:focus {
-  border-color: var(--wp-admin-theme-color);
-  box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
+  border-color: var(--admin-theme-color);
+  box-shadow: 0 0 0 1px var(--admin-theme-color);
   outline: 2px solid transparent;
 }
 .blocks-shortcode__textarea::-webkit-input-placeholder {
@@ -2257,8 +2257,8 @@ body.editor-styles-wrapper .wp-block-navigation__responsive-container.is-menu-op
   height: 48px;
   border-radius: 50%;
   position: relative;
-  background: var(--wp-admin-theme-color);
-  border-color: var(--wp-admin-theme-color);
+  background: var(--admin-theme-color);
+  border-color: var(--admin-theme-color);
   border-style: solid;
   color: #fff;
 }
@@ -2449,8 +2449,8 @@ body.editor-styles-wrapper .wp-block-navigation__responsive-container.is-menu-op
 }
 .wp-block-table td.is-selected,
 .wp-block-table th.is-selected {
-  border-color: var(--wp-admin-theme-color);
-  box-shadow: inset 0 0 0 1px var(--wp-admin-theme-color);
+  border-color: var(--admin-theme-color);
+  box-shadow: inset 0 0 0 1px var(--admin-theme-color);
   border-style: double;
 }
 .wp-block-table figcaption {
@@ -2752,8 +2752,8 @@ body.editor-styles-wrapper .wp-block-navigation__responsive-container.is-menu-op
   height: 48px;
   border-radius: 50%;
   position: relative;
-  background: var(--wp-admin-theme-color);
-  border-color: var(--wp-admin-theme-color);
+  background: var(--admin-theme-color);
+  border-color: var(--admin-theme-color);
   border-style: solid;
   color: #fff;
 }

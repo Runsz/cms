@@ -8085,7 +8085,7 @@ function wp_untrash_post_set_previous_status( $new_status, $post_id, $previous_s
  * Returns whether the post can be edited in the block editor.
  *
  * @since 5.0.0
- * @since 6.1.0 Moved to wp-includes from wp-admin.
+ * @since 6.1.0 Moved to wp-includes from admin.
  *
  * @param int|WP_Post $post Post ID or WP_Post object.
  * @return bool Whether the post can be edited in the block editor.
@@ -8123,7 +8123,7 @@ function use_block_editor_for_post( $post ) {
  * REST API, then it won't work with the block editor.
  *
  * @since 5.0.0
- * @since 6.1.0 Moved to wp-includes from wp-admin.
+ * @since 6.1.0 Moved to wp-includes from admin.
  *
  * @param string $post_type The post type.
  * @return bool Whether the post type can be edited with the block editor.

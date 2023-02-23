@@ -1700,8 +1700,8 @@ function do_robots() {
 
 	$site_url = parse_url( site_url() );
 	$path     = ( ! empty( $site_url['path'] ) ) ? $site_url['path'] : '';
-	$output  .= "Disallow: $path/wp-admin/\n";
-	$output  .= "Allow: $path/wp-admin/admin-ajax.php\n";
+	$output  .= "Disallow: $path/admin/\n";
+	$output  .= "Allow: $path/admin/admin-ajax.php\n";
 
 	/**
 	 * Filters the robots.txt output.
@@ -2941,7 +2941,7 @@ function wp_upload_bits( $name, $deprecated, $bits, $time = null ) {
 		clean_dirsize_cache( $new_file );
 	}
 
-	/** This filter is documented in wp-admin/includes/file.php */
+	/** This filter is documented in admin/includes/file.php */
 	return apply_filters(
 		'wp_handle_upload',
 		array(
@@ -6022,7 +6022,7 @@ function force_ssl_admin( $force = null ) {
 /**
  * Guesses the URL for the site.
  *
- * Will remove wp-admin links to retrieve only return URLs not in the wp-admin
+ * Will remove admin links to retrieve only return URLs not in the admin
  * directory.
  *
  * @since 2.6.0
@@ -6037,8 +6037,8 @@ function wp_guess_url() {
 		$script_filename_dir = dirname( $_SERVER['SCRIPT_FILENAME'] );
 
 		// The request is for the admin.
-		if ( strpos( $_SERVER['REQUEST_URI'], 'wp-admin' ) !== false || strpos( $_SERVER['REQUEST_URI'], 'wp-login.php' ) !== false ) {
-			$path = preg_replace( '#/(wp-admin/?.*|wp-login\.php.*)#i', '', $_SERVER['REQUEST_URI'] );
+		if ( strpos( $_SERVER['REQUEST_URI'], 'admin' ) !== false || strpos( $_SERVER['REQUEST_URI'], 'wp-login.php' ) !== false ) {
+			$path = preg_replace( '#/(admin/?.*|wp-login\.php.*)#i', '', $_SERVER['REQUEST_URI'] );
 
 			// The request is for a file in ABSPATH.
 		} elseif ( $script_filename_dir . '/' === $abspath_fix ) {
@@ -7910,7 +7910,7 @@ function wp_privacy_delete_old_export_files() {
 		return;
 	}
 
-	require_once ABSPATH . 'wp-admin/includes/file.php';
+	require_once ABSPATH . 'admin/includes/file.php';
 	$export_files = list_files( $exports_dir, 100, array( 'index.php' ) );
 
 	/**

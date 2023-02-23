@@ -69,23 +69,23 @@
  */
 /**
  * Reset default styles for JavaScript UI based pages.
- * This is a WP-admin agnostic reset
+ * This is a admin agnostic reset
  */
 /**
  * Reset the WP Admin page styles for Gutenberg-like pages.
  */
 :root {
-  --wp-admin-theme-color: #007cba;
-  --wp-admin-theme-color--rgb: 0, 124, 186;
-  --wp-admin-theme-color-darker-10: #006ba1;
-  --wp-admin-theme-color-darker-10--rgb: 0, 107, 161;
-  --wp-admin-theme-color-darker-20: #005a87;
-  --wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #007cba;
+  --admin-theme-color--rgb: 0, 124, 186;
+  --admin-theme-color-darker-10: #006ba1;
+  --admin-theme-color-darker-10--rgb: 0, 107, 161;
+  --admin-theme-color-darker-20: #005a87;
+  --admin-theme-color-darker-20--rgb: 0, 90, 135;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   :root {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }
 
@@ -486,7 +486,7 @@ body.is-fullscreen-mode .interface-interface-skeleton {
   font-weight: 500;
 }
 .interface-preferences__tabs .components-tab-panel__tabs .components-tab-panel__tabs-item:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) var(--wp-admin-theme-color);
+  box-shadow: inset 0 0 0 var(--admin-border-width-focus) var(--admin-theme-color);
 }
 .interface-preferences__tabs .components-tab-panel__tab-content {
   padding-right: 24px;
@@ -569,7 +569,7 @@ body.is-fullscreen-mode .interface-interface-skeleton {
 }
 
 .wp-block-widget-area__highlight-drop-zone {
-  outline: var(--wp-admin-border-width-focus) solid var(--wp-admin-theme-color);
+  outline: var(--admin-border-width-focus) solid var(--admin-theme-color);
 }
 
 body.is-dragging-components-draggable .wp-block[data-type="core/widget-area"] .components-panel__body > .components-panel__body-title,
@@ -637,7 +637,7 @@ body.is-dragging-components-draggable .wp-block[data-type="core/widget-area"] .c
 }
 .edit-widgets-header-toolbar > .components-button.has-icon.has-icon.has-icon:focus:not(:disabled),
 .edit-widgets-header-toolbar > .components-dropdown > .components-button.has-icon.has-icon:focus:not(:disabled) {
-  box-shadow: 0 0 0 var(--wp-admin-border-width-focus) var(--wp-admin-theme-color), inset 0 0 0 1px #fff;
+  box-shadow: 0 0 0 var(--admin-border-width-focus) var(--admin-theme-color), inset 0 0 0 1px #fff;
   outline: 1px solid transparent;
 }
 .edit-widgets-header-toolbar > .components-button.has-icon.has-icon.has-icon::before,
@@ -768,7 +768,7 @@ body.is-dragging-components-draggable .wp-block[data-type="core/widget-area"] .c
   visibility: hidden;
 }
 .components-button.edit-widgets-sidebar__panel-tab.is-active {
-  box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) transparent, inset 0 -1.5px 0 0 var(--wp-admin-theme-color);
+  box-shadow: inset 0 0 0 var(--admin-border-width-focus) transparent, inset 0 -1.5px 0 0 var(--admin-theme-color);
   font-weight: 600;
   position: relative;
 }
@@ -782,10 +782,10 @@ body.is-dragging-components-draggable .wp-block[data-type="core/widget-area"] .c
   border-bottom: 1.5px solid transparent;
 }
 .components-button.edit-widgets-sidebar__panel-tab:focus {
-  box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) var(--wp-admin-theme-color);
+  box-shadow: inset 0 0 0 var(--admin-border-width-focus) var(--admin-theme-color);
 }
 .components-button.edit-widgets-sidebar__panel-tab.is-active:focus {
-  box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) var(--wp-admin-theme-color), inset 0 -1.5px 0 0 var(--wp-admin-theme-color);
+  box-shadow: inset 0 0 0 var(--admin-border-width-focus) var(--admin-theme-color), inset 0 -1.5px 0 0 var(--admin-theme-color);
 }
 
 .edit-widgets-widget-areas__top-container {
@@ -1047,121 +1047,121 @@ body.widgets-php .media-frame select.attachment-filters:last-of-type {
 }
 
 body.admin-color-light {
-  --wp-admin-theme-color: #0085ba;
-  --wp-admin-theme-color--rgb: 0, 133, 186;
-  --wp-admin-theme-color-darker-10: #0073a1;
-  --wp-admin-theme-color-darker-10--rgb: 0, 115, 161;
-  --wp-admin-theme-color-darker-20: #006187;
-  --wp-admin-theme-color-darker-20--rgb: 0, 97, 135;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #0085ba;
+  --admin-theme-color--rgb: 0, 133, 186;
+  --admin-theme-color-darker-10: #0073a1;
+  --admin-theme-color-darker-10--rgb: 0, 115, 161;
+  --admin-theme-color-darker-20: #006187;
+  --admin-theme-color-darker-20--rgb: 0, 97, 135;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.admin-color-light {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }
 
 body.admin-color-modern {
-  --wp-admin-theme-color: #3858e9;
-  --wp-admin-theme-color--rgb: 56, 88, 233;
-  --wp-admin-theme-color-darker-10: #2145e6;
-  --wp-admin-theme-color-darker-10--rgb: 33, 69, 230;
-  --wp-admin-theme-color-darker-20: #183ad6;
-  --wp-admin-theme-color-darker-20--rgb: 24, 58, 214;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #3858e9;
+  --admin-theme-color--rgb: 56, 88, 233;
+  --admin-theme-color-darker-10: #2145e6;
+  --admin-theme-color-darker-10--rgb: 33, 69, 230;
+  --admin-theme-color-darker-20: #183ad6;
+  --admin-theme-color-darker-20--rgb: 24, 58, 214;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.admin-color-modern {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }
 
 body.admin-color-blue {
-  --wp-admin-theme-color: #096484;
-  --wp-admin-theme-color--rgb: 9, 100, 132;
-  --wp-admin-theme-color-darker-10: #07526c;
-  --wp-admin-theme-color-darker-10--rgb: 7, 82, 108;
-  --wp-admin-theme-color-darker-20: #064054;
-  --wp-admin-theme-color-darker-20--rgb: 6, 64, 84;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #096484;
+  --admin-theme-color--rgb: 9, 100, 132;
+  --admin-theme-color-darker-10: #07526c;
+  --admin-theme-color-darker-10--rgb: 7, 82, 108;
+  --admin-theme-color-darker-20: #064054;
+  --admin-theme-color-darker-20--rgb: 6, 64, 84;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.admin-color-blue {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }
 
 body.admin-color-coffee {
-  --wp-admin-theme-color: #46403c;
-  --wp-admin-theme-color--rgb: 70, 64, 60;
-  --wp-admin-theme-color-darker-10: #383330;
-  --wp-admin-theme-color-darker-10--rgb: 56, 51, 48;
-  --wp-admin-theme-color-darker-20: #2b2724;
-  --wp-admin-theme-color-darker-20--rgb: 43, 39, 36;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #46403c;
+  --admin-theme-color--rgb: 70, 64, 60;
+  --admin-theme-color-darker-10: #383330;
+  --admin-theme-color-darker-10--rgb: 56, 51, 48;
+  --admin-theme-color-darker-20: #2b2724;
+  --admin-theme-color-darker-20--rgb: 43, 39, 36;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.admin-color-coffee {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }
 
 body.admin-color-ectoplasm {
-  --wp-admin-theme-color: #523f6d;
-  --wp-admin-theme-color--rgb: 82, 63, 109;
-  --wp-admin-theme-color-darker-10: #46365d;
-  --wp-admin-theme-color-darker-10--rgb: 70, 54, 93;
-  --wp-admin-theme-color-darker-20: #3a2c4d;
-  --wp-admin-theme-color-darker-20--rgb: 58, 44, 77;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #523f6d;
+  --admin-theme-color--rgb: 82, 63, 109;
+  --admin-theme-color-darker-10: #46365d;
+  --admin-theme-color-darker-10--rgb: 70, 54, 93;
+  --admin-theme-color-darker-20: #3a2c4d;
+  --admin-theme-color-darker-20--rgb: 58, 44, 77;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.admin-color-ectoplasm {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }
 
 body.admin-color-midnight {
-  --wp-admin-theme-color: #e14d43;
-  --wp-admin-theme-color--rgb: 225, 77, 67;
-  --wp-admin-theme-color-darker-10: #dd382d;
-  --wp-admin-theme-color-darker-10--rgb: 221, 56, 45;
-  --wp-admin-theme-color-darker-20: #d02c21;
-  --wp-admin-theme-color-darker-20--rgb: 208, 44, 33;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #e14d43;
+  --admin-theme-color--rgb: 225, 77, 67;
+  --admin-theme-color-darker-10: #dd382d;
+  --admin-theme-color-darker-10--rgb: 221, 56, 45;
+  --admin-theme-color-darker-20: #d02c21;
+  --admin-theme-color-darker-20--rgb: 208, 44, 33;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.admin-color-midnight {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }
 
 body.admin-color-ocean {
-  --wp-admin-theme-color: #627c83;
-  --wp-admin-theme-color--rgb: 98, 124, 131;
-  --wp-admin-theme-color-darker-10: #576e74;
-  --wp-admin-theme-color-darker-10--rgb: 87, 110, 116;
-  --wp-admin-theme-color-darker-20: #4c6066;
-  --wp-admin-theme-color-darker-20--rgb: 76, 96, 102;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #627c83;
+  --admin-theme-color--rgb: 98, 124, 131;
+  --admin-theme-color-darker-10: #576e74;
+  --admin-theme-color-darker-10--rgb: 87, 110, 116;
+  --admin-theme-color-darker-20: #4c6066;
+  --admin-theme-color-darker-20--rgb: 76, 96, 102;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.admin-color-ocean {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }
 
 body.admin-color-sunrise {
-  --wp-admin-theme-color: #dd823b;
-  --wp-admin-theme-color--rgb: 221, 130, 59;
-  --wp-admin-theme-color-darker-10: #d97426;
-  --wp-admin-theme-color-darker-10--rgb: 217, 116, 38;
-  --wp-admin-theme-color-darker-20: #c36922;
-  --wp-admin-theme-color-darker-20--rgb: 195, 105, 34;
-  --wp-admin-border-width-focus: 2px;
+  --admin-theme-color: #dd823b;
+  --admin-theme-color--rgb: 221, 130, 59;
+  --admin-theme-color-darker-10: #d97426;
+  --admin-theme-color-darker-10--rgb: 217, 116, 38;
+  --admin-theme-color-darker-20: #c36922;
+  --admin-theme-color-darker-20--rgb: 195, 105, 34;
+  --admin-border-width-focus: 2px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.admin-color-sunrise {
-    --wp-admin-border-width-focus: 1.5px;
+    --admin-border-width-focus: 1.5px;
   }
 }

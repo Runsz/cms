@@ -69,7 +69,7 @@
  */
 /**
  * Reset default styles for JavaScript UI based pages.
- * This is a WP-admin agnostic reset
+ * This is a admin agnostic reset
  */
 /**
  * Reset the WP Admin page styles for Gutenberg-like pages.
@@ -102,8 +102,8 @@
 }
 .wp-block-table td.is-selected,
 .wp-block-table th.is-selected {
-  border-color: var(--wp-admin-theme-color);
-  box-shadow: inset 0 0 0 1px var(--wp-admin-theme-color);
+  border-color: var(--admin-theme-color);
+  box-shadow: inset 0 0 0 1px var(--admin-theme-color);
   border-style: double;
 }
 .wp-block-table figcaption {

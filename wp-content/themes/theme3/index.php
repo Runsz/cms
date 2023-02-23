@@ -1,5 +1,7 @@
-<?php get_header(); ?>
+<?php get_header(); ?> 
 
+
+<!-- Postingan -->
 <main id="content">
     <?php if ( have_posts() ):
         while( have_posts() ):  the_post(); ?>
@@ -10,11 +12,13 @@
     endif;?>
 </main>
 
+
+<!-- Berita Terkini & Sidebar -->
 <div id="wrapper">
     <main id="custom-content">
         <h2>Berita Terkini</h2>
         <?php 
-            $custom_post = new WP_Query(array( 'cat' => '3,4,5','order' => 'ASC', 'orderby' => 'date', 'posts_per_page' => 4,));
+            $custom_post = new WP_Query(array( 'cat' => '4,5,11','order' => 'ASC', 'orderby' => 'date', 'posts_per_page' => 4,));
 
             if ($custom_post -> have_posts()):
                 while($custom_post->have_posts()): 
@@ -29,9 +33,25 @@
 
     <aside id="sidebar">
         <?php dynamic_sidebar('sidebar1'); ?>
+
+        <div id="recent-post">
+            <h2>Riwayat Postingan</h2>
+
+            <?php
+                $content = array (
+                    'post_type' => array('post','news'),
+                );
+                $recent_post = new WP_Query($content);?>
+                    <?php while ($recent_post->have_posts()) {
+                            $recent_post->the_post();?>
+                            <h4><a href="<?php the_permalink(); ?>"> - <?php the_title(); ?></a></h4>
+                    <?php } ?>
+        </div>
     </aside>
 </div>
 
+
+<!-- Custom Post News -->
 <?php
 $args = array(
 	'post_type'      => 'news',
@@ -48,6 +68,8 @@ $loop = new WP_Query($args);?>
     }?>
 </main>
 
+
+<!-- Post by Admin -->
 <?php
 $isi = array(
     'post_type' => array('post','news'),
@@ -66,5 +88,6 @@ $author_post = new WP_Query($isi);?>
         <?php
     }?>
 </main>
+
 
 <?php get_footer() ?>
